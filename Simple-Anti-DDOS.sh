@@ -15,7 +15,6 @@ iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -A INPUT -p tcp --dport http -j ACCEPT
 iptables -A INPUT -p tcp --dport https -j ACCEPT
 
-iptables -A INPUT -j specialips
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT           # change this port to your prefer SSH port.
 iptables -A INPUT -j DROP
 
